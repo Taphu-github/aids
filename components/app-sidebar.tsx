@@ -48,6 +48,7 @@ const navItems = [
   { name: "Device", icon: Smartphone, href: "/device" },
   { name: "Owner", icon: User, href: "/owner" },
   { name: "User", icon: Users, href: "/user" },
+  { name: "Detected Animal", icon: Squirrel, href: "/detected-animal" },
   { name: "Animal Category", icon: Squirrel, href: "/animal-category" },
   { name: "MQTT Credentials ", icon: Radio, href: "/mqtt-credit" },
 ];
