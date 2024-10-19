@@ -5,8 +5,7 @@ import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Tabl
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { PencilIcon, TrashIcon, PlusIcon } from 'lucide-react'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 
 // Mock data for demonstration
 const initialDetectedAnimals = [
@@ -38,10 +37,10 @@ export default function DetectedAnimalTable() {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
   const [currentDetectedAnimal, setCurrentDetectedAnimal] = useState<DetectedAnimal | null>(null)
 
-  const handleOpenDialog = (detectedAnimal: DetectedAnimal | null = null) => {
-    setCurrentDetectedAnimal(detectedAnimal)
-    setIsDialogOpen(true)
-  }
+//   const handleOpenDialog = (detectedAnimal: DetectedAnimal | null = null) => {
+//     setCurrentDetectedAnimal(detectedAnimal)
+//     setIsDialogOpen(true)
+//   }
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
